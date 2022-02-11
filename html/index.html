@@ -8,9 +8,70 @@
     <title>POSSEメンバー紹介サイト</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
 </head>
 
 <body>
+    <div id="splash">
+        <div id="splashLogo">
+            <img src="../img/footerPosseLogo.png" alt="遷移時のスライド" class="fadeUp">
+        </div>
+    </div>
+    <header id="posselogoLink wrapper">
+        <!-- 横幅ずれないよう固定 -->
+        <div class="site-header">
+            <h1 class="posselogo">
+                <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
+                    <img src="../img/posselogo.jpg" alt="POSSEロゴ">
+                </a>
+            </h1>
+            <ul class="top_menu">
+                <li class="header_list"><a href="#aboutLink">ひなとは</a></li>
+                <li class="header_list"><a href="#programmingLink">ひなのいいところ</a></li>
+                <li class="header_list"><a href="#personalLink">生涯の仲間</a></li>
+                <li class="header_list"><a href="#personalInterview">POSSE生からの声</a></li>
+                <li class="header_list"><a href="activity.html">活動記録</a></li>
+                <li class="header_list"><a href="overview.html">日常の記録</a></li>
+            </ul>
+            <a class="linelogo" href="https://lin.ee/sQdqKjf">
+                <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加">
+            </a>
+            <!-- ハンバーガーアイコン -->
+            <div type="button" class="menu_btn">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div id="video-area">
+        <video id="video"
+            webkit-playsinline playsinline muted autoplay loop>
+            <source src="../img/kohei.MOV">
+        </video>
+    </div>
+
+
+    <div class="tiles"><a class="tile" href="#"><img src="../img/hinamiki1.jpg" />
+            <div class="details"><span class="title">Hina&Mikipa</span><span class="info">10/27の飯もくの時の いい写だね</span></div>
+        </a><a class="tile" href="#"><img src="../img/hina2.jpg" />
+            <div class="details"><span class="title">Hina in paris</span><span class="info"> Elle est tres belle.</span></div>
+        </a><a class="tile" href="#"><img src="../img/hina3.jpg"/>
+            <div class="details"><span class="title">Hina</span><span class="info">Elle est interessante.</span></div>
+        </a><a class="tile" href="#"><img src="../img/hina4.jpg" />
+            <div class="details"><span class="title">Hina</span><span class="info">Elle est groumond mais elle est mince.</span></div>
+        </a></div>
+
+    <footer>
+        <a class="linkedImg instagram" href="https://www.instagram.com/posse_programming/" target="_blank">
+            <img src="../img/insta.png" alt="instagramアイコン">
+        </a>
+        <div id="page_top">
+            <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;"></a>
+        </div>
+    </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
