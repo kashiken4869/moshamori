@@ -64,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
-  height: 96px;
+  height: 120px;
   box-shadow: 3px 3px 3px rgb(204 204 204);
 }
 
@@ -301,7 +301,9 @@ body {
 }
 
 #video-area{
-    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* position: fixed; */
     z-index: -1; /*最背面に設定*/
     top: 0;
     right:0;
@@ -310,11 +312,10 @@ body {
     overflow: hidden;
 }
 
-
-
-
-
-
+#video {
+        width: 100%;
+    height: 885px;
+}
 
 
 /* Reset */
@@ -407,7 +408,7 @@ body {
 
 
 footer {
-    margin-top: 100px;
+    margin-top: 200px;
         -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -420,7 +421,7 @@ footer {
 
 /* 箇条書きの・をなくす */
 .linkedImg {
-    padding-right: 70px;
+    /* padding-right: 70px; */
   text-decoration: none;
   width: 100px;
 }
@@ -430,7 +431,6 @@ footer {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all  0.3s ease;
-
 }
 
 .linkedImg img:hover {
@@ -474,4 +474,133 @@ footer {
   margin: auto;
   text-align: center;
 }
+
+.contents_hina {
+    width: 70%;
+    margin: 0 auto 150px;
+    left: 0;
+    height: 300px;
+    /* margin-left: 40px; */
+}
+
+.contents_hina_2 {
+    width: 70%;
+    /* margin: 0 auto; */
+    right: 0;
+    height: 300px;
+    margin-right: 40px;
+}
+
+
+
+.sub_title_hina {
+    font-size: 3vw;
+    width: 20%;
+    text-align:center;
+    font-weight: bold;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+.sub_title_hina_2 {
+    font-size: 3vw;
+    width: 20%;
+    /* margin: 0 0 0 auto; */
+    right: 20px;
+    text-align:center;
+    font-weight: bold;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+.flex_box {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_box_2 {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.img_container {
+    width: 40%;
+    height: 250px;
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+    /* top: 0; */
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+.text_container {
+    width: 45%;
+}
+
+.text_container h3 {
+    position: relative;
+    display: inline-block;
+    font-size:2vw;
+}
+
+.text_container h3::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: skyblue;
+  transform: scale(1, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+.text_container h3:hover::after {
+  transform-origin: left top;
+  transform: scale(0, 1);
+}
+
+
+.text_container p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* 右から左へのフェードインアニメーション */
+.right_to_left {
+    opacity : 0;
+    transform : translate(100px, 100px);
+    transition:all 1s;
+}
+
+/* スクロールして見えたら見えるようになる */
+.right_to_left.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+/* 右から左へのフェードインアニメーション */
+.left_to_right {
+    opacity : 0;
+    transform : translate(-100px, 100px);
+    transition:all 1s;
+}
+
+/* スクロールして見えたら見えるようになる */
+.left_to_right.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+
 

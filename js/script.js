@@ -31,3 +31,30 @@ $(".menu-content").click(function () {
       }, 1200, 'easeInOutQuart');
   })
 })(document, jQuery);
+
+
+$(function(){
+    $(window).scroll(function (){
+      $('.right_to_left').each(function(){
+        var elementTop = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elementTop - windowHeight + 100){
+          $(this).addClass('scrollin');
+        }
+      });
+    });
+  });
+
+$(function(){
+    $(window).scroll(function (){
+      $('.left_to_right').each(function(){
+        var elementTop = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elementTop - windowHeight + 100){
+          $(this).addClass('scrollin');
+        }
+      });
+    });
+  });
