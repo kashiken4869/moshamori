@@ -28,8 +28,8 @@
             </h1>
             <ul class="top_menu">
                 <li class="header_list"><a href="#aboutHina">ひなとは</a></li>
-                <li class="header_list"><a href="#programmingLink">ひなのいいところ</a></li>
-                <li class="header_list"><a href="#personalLink">生涯の仲間</a></li>
+                <li class="header_list"><a href="#goodAtHina">ひなのいいところ</a></li>
+                <li class="header_list"><a href="#firstHina">馴れ初め</a></li>
                 <li class="header_list"><a href="#personalInterview">POSSE生からの声</a></li>
                 <li class="header_list"><a href="activity.html">活動記録</a></li>
                 <li class="header_list"><a href="overview.html">日常の記録</a></li>
@@ -46,48 +46,87 @@
             </div>
         </div>
     </header>
-
+    <!-- 
     <div id="video-area">
         <video id="video" src="../img/takkyuu.MOV" playsinline muted autoplay loop>
-            <!-- <source src="../img/branco.mp4 type=video/mp4"> -->
         </video>
-    </div>
+    </div> -->
 
-
-    <div class="tiles">
-        <a class="tile" href="#"><img src="../img/hinamiki1.jpg" />
-            <div class="details"><span class="title">Hina&Mikipa</span><span class="info">10/27の飯もくの時の いい写だね</span>
+    <div class="roop_container">
+        <div class="tiles" id="tiles">
+            <!-- <a class="tile" href="#">
+            <img src="../img/hinamiki1.jpg" />
+            <div class="details">
+                <span class="title">Hina&Mikipa</span>
+                <span class="info">10/27の飯もくの時の いい写だね</span>
             </div>
-        </a><a class="tile" href="#"><img src="../img/hina2.jpg" />
-            <div class="details"><span class="title">Hina in paris</span><span class="info"> Elle est tres belle.</span>
-            </div>
-        </a><a class="tile" href="#"><img src="../img/hina3.jpg" />
-            <div class="details"><span class="title">Hina</span><span class="info">Elle est interessante.</span></div>
-        </a><a class="tile" href="#"><img src="../img/hina4.jpg" />
-            <div class="details"><span class="title">Hina</span><span class="info">Elle est groumond mais elle est
-                    mince.</span></div>
         </a>
+        <a class="tile" href="#">
+            <img src="../img/hina2.jpg" />
+            <div class="details">
+                <span class="title">Hina in paris</span>
+                <span class="info"> Elle est tres belle.</span>
+            </div>
+        </a>
+        <a class="tile" href="#">
+            <img src="../img/hina3.jpg" />
+            <div class="details">
+                <span class="title">Hina</span>
+                <span class="info">Elle est interessante.</span>
+            </div>
+        </a>
+        <a class="tile" href="#">
+            <img src="../img/hina4.jpg" />
+            <div class="details">
+                <span class="title">Hina</span>
+                <span class="info">Elle est groumond mais elle est
+                    mince.</span>
+            </div>
+        </a> -->
+        </div>
+        <div class="more">
+            <button class="change" onclick="change()">view more</button>
+            <!-- <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL"
+            data-url="http://127.0.0.1:5500/html/1stprize.html" data-color="default" data-size="small"
+            data-count="false" data-ver="3" style="display: none;"></div> -->
+            <!-- <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async"
+            defer="defer"></script> -->
+        </div>
+
     </div>
 
-    <div class="contents_hina left_to_right" id="aboutHina">
-        <h2 class="sub_title_hina">ひなとは</h2>
-        <div class="flex_box">
-            <div class="img_container"><img src="../img/hina10.jpg" alt="ひな画像一枚目" class="img_hina1"></div>
-            <div class="text_container">
-                <h3>へっちゃら。</h3>
-                <p>普段はインターンにカルチャー局にと忙しい日々を送っているひな。その姿は後輩には「尊敬すべき先輩像」として写っている。</p>
-                <p>しかし当の本人は自分は「へっちゃら」であると答えているいつも隣にいさせて貰ってる立場としては確かにその一面はみられることが多い。そんなところがもとても愛おしいひななのである。</p>
+    <div class="contents_container">
+        <div class="contents_hina left_to_right" id="aboutHina">
+            <h2 class="sub_title_hina">ひなとは</h2>
+            <div class="flex_box">
+                <div class="img_container"><img src="../img/hina10.jpg" alt="ひな画像一枚目" class="img_hina1"></div>
+                <div class="text_container">
+                    <h3>へっちゃら。</h3>
+                    <p>普段はインターンにカルチャー局にと忙しい日々を送っているひな。その姿は後輩には「尊敬すべき先輩像」として写っている。</p>
+                    <p>しかし当の本人は自分は「へっちゃら」であると答えているいつも隣にいさせて貰ってる立場としては確かにその一面はみられることが多い。そんなところがもとても愛おしいひななのである。</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="contents_hina right_to_left" id="aboutHina">
-        <h2 class="sub_title_hina_2">ひなとは</h2>
-        <div class="flex_box_2">
-            <div class="img_container"><img src="../img/hina10.jpg" alt="ひな画像一枚目" class="img_hina1"></div>
-            <div class="text_container">
-                <h3>へっちゃら。</h3>
-                <p>普段はインターンにカルチャー局にと忙しい日々を送っているひな。その姿は後輩には「尊敬すべき先輩像」として写っている。</p>
-                <p>しかし当の本人は自分は「へっちゃら」であると答えているいつも隣にいさせて貰ってる立場としては確かにその一面はみられることが多い。そんなところがもとても愛おしいひななのである。</p>
+        <div class="contents_hina right_to_left" id="goodAtHina">
+            <h2 class="sub_title_hina_2">ひなのいいところ</h2>
+            <div class="flex_box_2">
+                <div class="img_container"><img src="../img/hina12.jpg" alt="ひな画像一枚目" class="img_hina2"></div>
+                <div class="text_container">
+                    <h3>絶大なる安心感。</h3>
+                    <p>自分の仕事に常に直向きで、責任感の強いひな。普段話してて、いつも考えがしっかりとしており、いつも新しいパラダイムを与えてくれる。</p>
+                    <p>そんなひなの一番のいいところはやはり"絶大なる"安心感であると考える。たまにへっちゃらなところを見せる姿にもどこか安心感を感じる。</p>
+                </div>
+            </div>
+        </div>
+        <div class="contents_hina left_to_right" id="firstHina">
+            <h2 class="sub_title_hina">馴れ初め</h2>
+            <div class="flex_box">
+                <div class="img_container"><img src="../img/hina17.jpg" alt="ひな画像一枚目" class="img_hina1"></div>
+                <div class="text_container">
+                    <h3>最初はzoom。</h3>
+                    <p>ひなとの馴れ初めはようへいが入っていたzoomから。その時にひながいて、zoomで飲みに行くことが決まってそこから話すようになった。</p>
+                    <p>9月にはひな、かしけん、ようへいの3人グループで何回遊んだことか。9月19日の飲み会がきっかけでかしけんのことが好きになったらしい。10月28日に付き合い始めましたとさ。</p>
+                </div>
             </div>
         </div>
     </div>
