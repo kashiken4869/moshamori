@@ -52,6 +52,7 @@ html {
 
 body {
   overflow: hidden;
+  row-gap: 100px;
 } 
 
 .site-header {
@@ -310,6 +311,7 @@ body {
     left:0;
     bottom:0;
     overflow: hidden;
+    background-color:skyblue;
 }
 
 #video {
@@ -320,7 +322,8 @@ body {
 
 
 .roop_container {
-margin: 100px 0;
+/* margin: 100px 0 0; */
+margin: 0;
     padding: 50px 0;
   background-color: skyblue;
 
@@ -331,7 +334,6 @@ margin: 100px 0;
 /* Reset */
 @import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
 .tiles {
-
 padding: 30px 0 0;
   flex-wrap: wrap;
   margin: 0px auto;
@@ -341,6 +343,7 @@ padding: 30px 0 0;
   /* z-index: 100; */
 
   /* width: 1040px; */
+  gap: 20px;
   font-size: 0;
   text-align: center;
   /* position: absolute; */
@@ -352,7 +355,7 @@ padding: 30px 0 0;
   display: inline-block;
   width: 20%;
   height: 25vw;
-  margin: 20px;
+  /* margin: 20px; */
   text-align: left;
   opacity: 0.99;
   overflow: hidden;
@@ -390,7 +393,7 @@ padding: 30px 0 0;
 }
 
 .tiles .tile:hover {
-    transform:scale(1.2,1.2);
+    transform:scale(1.1,1.1);
 
     box-shadow: 5px 5px 5px 5px snow, -5px -5px 5px 5px snow;
     transition:1s all;
@@ -479,8 +482,8 @@ footer {
   width: 30px;
   height: 30px;
   position: fixed;
-  right: 10px;
-  bottom: 128px;
+  right: 30px;
+  bottom: -80px;
   background: #4c4c4c;
   opacity: 0.6;
   border-radius: 50%;
@@ -599,7 +602,7 @@ padding: 100px 0;
 .img_container img:hover {
   transform:scale(1.0,1.0) rotate(0deg);
   transition:1s all;
-  box-shadow: 3px 3px 3px 3px teal;
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
   /* position: absolute; */
 }
 
@@ -688,4 +691,9 @@ padding: 100px 0;
   line-height: 40px;
   width: 160px;
   border-radius: 20px;
+}
+
+
+.change_color {
+  display: none;
 }

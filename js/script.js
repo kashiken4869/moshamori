@@ -56,7 +56,7 @@ $(function () {
             var elementTop = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > elementTop - windowHeight + 100) {
+            if (scroll > elementTop - windowHeight + 150) {
                 $(this).addClass('scrollin');
             }
         });
@@ -69,12 +69,39 @@ $(function () {
             var elementTop = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > elementTop - windowHeight + 50) {
+            if (scroll > elementTop - windowHeight + 200) {
                 $(this).addClass('scrollin');
             }
         });
     });
 });
+
+jQuery(function() {
+  var appear = false;
+  var pagetop = $('#page_top');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {  //400pxスクロールしたら
+      if (appear == false) {
+        appear = true;
+        pagetop.stop().animate({
+          'bottom': '80px' //下から100pxの位置に
+        }, 300); //0.3秒かけて現れる
+      }
+    } else {
+      if (appear) {
+        appear = false;
+        pagetop.stop().animate({
+          'bottom': '-80px' //下から-100pxの位置に
+        }, 300); //0.3秒かけて隠れる
+      }
+    }
+  });
+  pagetop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 300); //0.5秒かけてトップへ戻る
+    return false;
+  });
+});
+
 
 ////////////メンバーループ
 
@@ -113,8 +140,11 @@ for (let i = 1; i < 24; i++) {
     $(contents + ':nth-child(n + ' + (show + 1) + ')').addClass('is-hidden');
 }
 
-$(function () {
-    $('.change').on('click', function () {
-        $('.members_a').toggleClass('change_color');
-    });
-});
+$('.info:even').addClass('change_color');
+// $('li').eq(1).addClass('style-li');
+
+// $(function () {
+//     $('.change').on('click', function () {
+//         $('.members_a').toggleClass('change_color');
+//     });
+// });
